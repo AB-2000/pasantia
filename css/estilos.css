@@ -1,124 +1,125 @@
-
-*,::before,::after{
-     box-sizing: inherit;
-}
-
-/*Margenes*/
-.sin-margin{
+body{
     margin: 0;
+    padding: 0;
+    background-color: #f6f6fc;
 }
-    
-.margin{  
-    margin: 0 auto;
-    align-items: center;
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+td{
+    padding: 0;
+}
+img{
+    border: 0;
 }
 
-/*General*/
-
-h4{
-    color: rgb(76, 143, 230);
+/*Media queries*/
+@media (max-width: 600px){ 
+      
 }
 
 /*Encabezado*/
-.header{
-    display: grid; 
-    padding: 2px;
-    max-width: 98%;
-    align-items: center center;
- /*   height: 22rem;    */   
-    
-}
+
 .encabezado{    
-    max-width: 390px;
-    width: 100%;
-    padding: 5px;
     margin: 0 auto;
-}
-
-.header-img{
-    background-image: url(../img/logo.png); 
-    width: 30rem;
-    height: 11rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-/*
-.header-img img{
-    width: 30rem;
-    height: 11rem;   
-}*/
-.galeria-contenedor{   
-    max-width: 780px;
     width: 100%;
-    padding: 5px;
-    margin: 0 auto;
-  
-}
-.galeria {
-    background-image: url(../img/FachadaAmericana.jpg); 
-    width: 55rem;
-    height: 11rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-@media (max-width: 768px){ 
-   
-    .header{
-        display: block;
-        align-items: center;  
-    }
-    .header-img{
-        background-image: url(../img/logo_pequeño.png); 
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-width: 35%;
-        margin: 0 auto;
-        padding: 8px;
-    }
-      .galeria{
-        max-width: 80%;
-        margin: 0 auto;
-        padding: 8px;
-    }
-    .contenido{
-        
-        display: block;
-        align-items: center;  
-    }
-     
-}
-/*Contenido*/
-
-.contenido{
-    margin-top: 10px;
-}
-.entrada{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: left;
-    margin-top: 8px;
-}
-@media (min-width: 768px ) {
-    .tres-columnas{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
-        padding: 5px;
-    }
-   
-}
-.entrada-imagen img{
-    max-width: 19rem;
-    height: 15rem; 
     
+    background-color: #f6f6fc;
+    padding-bottom: 20px;
 }
-.entrada-contenido a{
+
+.encabezado-contenido{
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+}
+.tabla-principal{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #4a4a4a;
+    table-layout: fixed;
+    align-content: center;
+}
+.td-logo{
+    background-color: rgb(86, 141, 243);
+    padding: 10px; 
+}
+.td-logo img{
+    width: 180;
+    max-width: 100%;
+
+}
+.td-fachada img{
+    width: 180;
+    height: 1200;
+    max-width: 100%;
+   
+}
+
+/*Entradas*/
+
+.entrada img{
+    width: 95%;
+    max-width: 150px;
+}
+
+.dos-columnas{
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;    
+
+}
+.dos-columnas, .columna{
+    width: 100%;
+    max-width: 600px;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.columna{   
+    max-width: 600px;
+    background-color: #ffffff;
+   
+}
+.padding{
+    padding: 15px;
+}
+.dos-columnas, .contenido{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.entrada-texto{
+    padding: 10px;
+    width: 100%;
+}
+.titulo{
+    font-weight: 700;
+    color: rgb(40, 76, 141);
+    font-family: sans-serif;
+}
+.texto{
+    font-weight: 100;
+    color: #727070;
+    font-family: sans-serif;
+}
+
+/*Boton Leer mas*/
+.entrada-texto a{
     width: 7rem;
     height: 1rem;
     display: inline-block;
-    background-color: rgba(95, 190, 207, 0.904);
+    background-color: rgb(40, 76, 141);
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,19 +128,5 @@ h4{
     color: #fff;
     text-align: center;
     padding: 5px;
+   
 }
-.entrada-contenido p{
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 4px;
-    padding: 5px;
-}
-
-.entrada-contenido span{
-    font-style: italic;
-    font-weight: 700;
-}
-.entrada-imagen{
-    max-width: 95%;
-}
-
